@@ -1,0 +1,17 @@
+idea.txt
+
+__pycache__
+
+*.mp3
+*.wav
+*.txt
+
+test.py
+bkk_main.py
+
+config.py
+credentials.json
+token.pickle
+debug.log
+using_pyttsx3 _main.py
+blynk.py
