@@ -8,6 +8,7 @@ import pyttsx3
 import datetime
 import subprocess
 import requests
+import random
 
 import google_calendar as gc
 import config
@@ -117,6 +118,19 @@ if __name__ == '__main__':
 
 	text = get_audio()
 
+	# greeting
+	greetings_str = ['hello', 'hi', 'hola', 'hey', 'namaste', ]
+	for phrase in greetings_str:
+		if phrase in text:
+			random_response = random.choice(greetings_str)
+			speak(random_response)
+	
+	ques_str = ['how are you', 'how are you doing']
+	ans_str = ["i'm fine", "not bad", "i'm great"]
+	for phrase in ques_str:
+		if phrase in text:
+			random_response = random.choice(ans_str)
+			speak(random_response)
 
 	# intro
 	intro_str = ['who are you', 'what is your name', ]
